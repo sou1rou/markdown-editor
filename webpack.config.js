@@ -5,7 +5,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx$/,
+                test: /.ts|.tsx$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
@@ -20,7 +20,9 @@ module.exports = {
         publicPath: 'dist/',
     },
     devServer: {
-        static: { directory: path.join(__dirname, '/') },
+        static: {
+            directory: path.join(__dirname, '/')
+        },
         hot: true,
         open: true,
     }
