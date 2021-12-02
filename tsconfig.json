@@ -4,9 +4,9 @@
         "outDir": "./dist",
         "target": "ES2015",
         "jsx": "react",
-        "esModuleInterop": true
+        // "esModuleInterop": true
     },
-    "include": [
-        "node_modules/@types"
-    ]
+    // "include": [
+    //     "node_modules/@types"
+    // ]
 }
