@@ -4,7 +4,6 @@ const worker: Worker = self as any
 
 worker.addEventListener('message', (event) => {
     const text = event.data
-    //@ts-ignore
     const html = marked(text)
     worker.postMessage({ html })
 })
